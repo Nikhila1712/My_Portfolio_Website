@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+      
+      :root {
+    --background-color: #dbeafe; /* Set to pink */
+    --text-color: #333; /* Replace with your desired text color */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: relative;
+    scroll-behavior: smooth;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .contact-section {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .contact-section h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .contact-section .contact-icon {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        .contact-section .social-icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: #f8f9fa;
+            border-radius: 50%;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .contact-section .social-icon:hover {
+            transform: scale(1.2);
+        }
+        .contact-section .col-auto p {
+            margin-top: 10px;
+            color: #fff;
+        }
+        .about-section, .projects-section, .skills-section {
+            text-align: center;
+            padding: 50px 0;
+           
+        }
+        .about-section img {
+            border-radius: 10%;
+            width: 150px;
+            height: 150px;
+        }
+        .projects-section .card, .skills-section .card {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .projects-section .card img, .skills-section .card img {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+        .projects-section .card-title, .skills-section .card-title {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .projects-section .card-text, .skills-section .card-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        .projects-section .btn-link, .skills-section .btn-link {
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .projects-section .btn-link:hover, .skills-section .btn-link:hover {
+            text-decoration: underline;
+        }
+        .pop-up-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0; /* Adjust margin as needed */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popUp 1s forwards;
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="container-fluid">
+        <h1 class="text-center"></h1>
+        <!-- Home content goes here -->
+    </div>
+
+    <div id="about" class="container about-section">
+        <h1>About</h1>
+        <div class="pop-up-text">
+            Hello, I'm Nikhila, Data Analyst
+        </div>
+        <img src="images/about/1.jpg" alt="Profile Picture" class="rounded-circle img-fluid mb-3">
+        <p>I'm dedicated data analyst specializing in transforming complex data into actionable insights. My expertise includes SQL, Python, Power BI, Tableau, Excel, Looker and more. I excel at crafting compelling Power BI dashboards, ensuring high data quality, utilizing SQL for precise data extraction, and delivering data-driven solutions. I also use Python for advanced analytics, create insightful visualizations with Tableau, and leverage Excel for data manipulation. </p>
+        <p>Passionate about driving decision-making through data, I effectively communicate findings, collaborate with cross-functional teams, and implement machine learning models for predictive analytics. My ability to identify trends and patterns through statistical analysis helps solve complex business challenges and enhance overall business outcomes.</p>
+    </div>
+
+    <div id="projects" class="container projects-section">
+        <h1 class="text-center">Projects</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">The project involves an in-depth analysis of leading global brands to understand their financial performance and market influence. Using data sourced from official financial reports and investor relations websites, I utilized Power BI to create a comprehensive dashboard. The dashboard visualizes key metrics such as revenue, operating income, workforce demographics, and product pricing strategies.</p>
+                        <a href="https://medium.com/@nikhila.naidu2317/analyzing-the-market-influence-of-leading-global-brands-e9901ae13172" class="btn btn-primary">Blog Post</a>
+                        <a href="https://github.com/Nikhila1712/Fashion_Brands_financia_Analysis" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">The primary objective of this project was to develop a predictive model capable of determining the likelihood of credit card application approval based on applicants' financial and personal data. By leveraging machine learning techniques, the aim was to assist financial institutions in making data-driven decisions, thereby minimizing the risk of defaults and optimizing the credit approval process.</p>
+                        <a href="https://medium.com/@nikhila.naidu2317/credit-card-approval-prediction-3693e59c1056" class="btn btn-primary">Blog Post</a>
+                        <a href="https://github.com/Nikhila1712/credit_card_approval_prediction" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">The project was to analyze the Stack Overflow Annual Developer Survey to uncover key insights about the developer community. By leveraging data analysis techniques, the aim was to understand developers employment status, learning methods, work preferences, and compensation trends. This analysis helps identify trends, challenges, and opportunities, providing insights for stakeholders in the tech industry.</p>
+                        <a href="https://medium.com/@nikhila.naidu2317/analyzing-stackoverflow-annual-developer-survey-e471b474548a" class="btn btn-primary">Blog Post</a>
+                        <a href="https://github.com/Nikhila1712/StackOverflow-Annual-Developer-Survey" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="container skills-section">
+        <h1 class="text-center">Skills</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 skill">
+                <div class="card">
+                    <img src="images/skills/1.png" class="card-img-top" alt="Python">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">I completed a comprehensive Python bootcamp on Udemy, gaining in-depth knowledge and practical skills in Python programming. This course covered various aspects of Python, including data analysis, web development, and automation, enhancing my proficiency in writing efficient and effective code.</p>
+                        <a href="https://www.udemy.com/certificate/UC-e30c9b28-d46b-4b26-80fc-e83e734b0d15/" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 skill">
+                <div class="card">
+                    <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Visualization</h5>
+                        <p class="card-text">I completed a comprehensive Power BI course on a YouTube channel, gaining in-depth knowledge and practical skills in data visualization and business intelligence. The course covered data modeling, creating interactive dashboards, and data analysis, enhancing my ability to transform raw data into meaningful insights effectively.</p>
+                        <a href="https://www.youtube.com/watch?v=uwe8C7K8fXY&t=10s" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 skill">
+                <div class="card">
+                    <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+                    <div class="card-body">
+                        <h5 class="card-title">SQL</h5>
+                        <p class="card-text">I completed a comprehensive SQL course on a YouTube channel, gaining in-depth knowledge and practical skills in database management and querying. The course covered SQL syntax, data manipulation, database design, and writing complex queries, significantly enhancing my ability to manage and analyze data effectively.</p>
+                        <a href="https://www.youtube.com/watch?v=l8DCPaHc5TQ&t=1476s" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 skill">
+                <div class="card">
+                    <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Storytelling</h5>
+                        <p class="card-text">I completed a comprehensive Data Storytelling course on a YouTube channel, gaining in-depth knowledge and practical skills in data visualization and narrative techniques. The course covered data visualization principles, crafting compelling stories, and presentation design, significantly enhancing my ability to communicate insights effectively.</p>
+                        <a href="https://www.youtube.com/watch?v=Hfx1X9WSGYQ" class="btn btn-link">Link to course or bootcamp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container-fluid contact-section">
+        <h1 class="text-center">Contact Me</h1>
+        <div class="row justify-content-center mb-4">
+            <div class= "col-auto d-flex align-items-center">
+                <i class="fas fa-envelope contact-icon"></i>
+                <span>nikhila.naidu2317@gmail.com</span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <i class="fas fa-phone contact-icon"></i>
+                <span>07760858938</span>
+            </div>
+        </div>`
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.linkedin.com/in/nikhila-chintapatla-75b045278/" target="_blank">
+                        <img src="icons/linkedin.png" class="img-fluid social-icon" alt="LinkedIn">
+                    </a>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="col-auto">
+                    <a href="https://github.com/Nikhila1712" target="_blank">
+                        <img src="icons/github.png" class="img-fluid social-icon" alt="GitHub">
+                    </a>
+                    <p>GitHub</p>
+                </div>
+                <div class="col-auto">
+                    <a href="https://medium.com/@nikhila.naidu2317" target="_blank">
+                        <img src="icons/medium.png" class="img-fluid social-icon" alt="Medium">
+                    </a>
+                    <p>Medium</p>
+                </div>
+                
+            </div>
+        </div>
+        
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
